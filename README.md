@@ -4,28 +4,24 @@ This repository is associated with the following paper:
 
 Van Den Berg, R., Vogel, M., Josić, K., & Ma, W. J. (2012). Optimal inference of sameness. Proceedings of the National Academy of Sciences, 109(8), 3178-3183.
 
-The repository only contain MATLAB code for experiment and data simulation (to-update). Please refer to this paper when using the code in this repository.
+The repository ONLY contain MATLAB code for experiment and data simulation. Please refer to this paper when using the code or data in this repository. If you want model fitting code, please contact Ronald van den Berg through email.
 
-## Data (to-update)
+## Data
 
-The data can be downloaded from the Open Science Framework project page (link-to-update).
+The data can be downloaded from the Open Science Framework project page, [Exp1](https://osf.io/t4c5m), [Exp2](https://osf.io/mznwy).
 
-The Exp 1 data is one file per set size per subject, while the Exp 2 data is one file per dubject, all in .mat files.
+The Exp 1 data is one file per set size per subject, while the Exp 2 data is one file per subject, all in .mat files.
 
-Data are saved in a variable named 'data' that contains trial-by-trial informaion as
+Data are saved in a matrix named 'data', where each row is a trial and the columns are as follows:
 
-data(trial_number,:) = [setMu setSigma realSetSigma RESPIDX CORRECT RT REALSTIMTIME setEpsilons setOrts setPosThetas];
-
-where each column is
-
-- setMu = mean of the distribution over stimulus orientations for this trial
-- setSigma = sample standard deviation of the distribution over stimulus orientations (0 in "same" trials, varies in "different" trials)
-- realSetSigma = population standard deviation of the distribution over stimulus orientations (0 in "same" trials, 10 in "different" trials if i remember correctly)
-- respIDX = response (should be 2 possible values, where one of them is "same" the other "different")
-- CORRECT = probably 0 when response was incorrect and 1 otherwise
-- RT = response time
-- REALSTIMTIME = stimulus presentation time (just for check)
-- setEpsilons = 8 columns with reliability values for the stimuli (only first N are used, where N is the set size on this trial)
-- setOrts = 8 columns with stimulus orientations (only first N are used, where N is the set size on this trial)
-- setPosThetas = 8 columns with stimulus locations (measured as the angle of the polar coordinate representation of this position; only first N are used, where N is the set size on this trial)
+- Column 1: mean of the distribution over stimulus orientations for this trial
+- Column 2: sample standard deviation of the distribution over stimulus orientations (0 in "same" trials, varies in "different" trials)
+- Column 3: population standard deviation of the distribution over stimulus orientations (0 in "same" trials, 10 in "different" trials)
+- Column 4: response (0="same", 1="different")
+- Column 5: response correctness (0=incorrect, 1=correct)
+- Column 6: response time
+- Column 7: stimulus time (as measured)
+- Columns 8-15: reliability values for the stimuli (only first N are used, where N is the set size on this trial)
+- Columns 16-23: stimulus orientations (only first N are used, where N is the set size on this trial)
+- Columns 24-31: stimulus locations (measured as the angle of the polar coordinate representation; only first N are used, where N is the set size on this trial)
 
