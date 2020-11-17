@@ -18,14 +18,14 @@ data(trial_number,:) = [setMu setSigma realSetSigma RESPIDX CORRECT RT REALSTIMT
 
 where each column is
 
-1. setMu = mean of the distribution over stimulus orientations for this trial
-2. setSigma = sample standard deviation of the distribution over stimulus orientations (0 in "same" trials, varies in "different" trials)
-3. realSetSigma = population standard deviation of the distribution over stimulus orientations (0 in "same" trials, 10 in "different" trials if i remember correctly)
-4. respIDX = response (should be 2 possible values, where one of them is "same" the other "different")
-5. CORRECT = probably 0 when response was incorrect and 1 otherwise
-6. RT = response time
-7. REALSTIMTIME = stimulus presentation time (just for check)
-8. setEpsilons = 8 columns with reliability values for the stimuli (only first N are used, where N is the set size on this trial)
-9. setOrts = 8 columns with stimulus orientations (only first N are used, where N is the set size on this trial)
-10. setPosThetas = 8 columns with stimulus locations (measured as the angle of the polar coordinate representation of this position; only first N are used, where N is the set size on this trial)
+- setMu = mean of the distribution over stimulus orientations for this trial
+- setSigma = sample standard deviation of the distribution over stimulus orientations (0 in "same" trials, varies in "different" trials)
+- realSetSigma = population standard deviation of the distribution over stimulus orientations (0 in "same" trials, 10 in "different" trials if i remember correctly)
+- respIDX = response (should be 2 possible values, where one of them is "same" the other "different")
+- CORRECT = probably 0 when response was incorrect and 1 otherwise
+- RT = response time
+- REALSTIMTIME = stimulus presentation time (just for check)
+- setEpsilons = 8 columns with reliability values for the stimuli (only first N are used, where N is the set size on this trial)
+- setOrts = 8 columns with stimulus orientations (only first N are used, where N is the set size on this trial)
+- setPosThetas = 8 columns with stimulus locations (measured as the angle of the polar coordinate representation of this position; only first N are used, where N is the set size on this trial)
 
