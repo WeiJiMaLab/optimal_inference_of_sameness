@@ -4,7 +4,7 @@ This repository is associated with the following paper:
 
 Van Den Berg, R., Vogel, M., Josić, K., & Ma, W. J. (2012). Optimal inference of sameness. Proceedings of the National Academy of Sciences, 109(8), 3178-3183.
 
-The repository ONLY contain MATLAB code for experiment and data simulation. Please refer to this paper when using the code or data in this repository. If you want model fitting code, please contact Ronald van den Berg through email.
+The repository ONLY contains MATLAB code for experiment and data simulation. Please refer to this paper when using the code or data in this repository. If you want model fitting code, please contact Ronald van den Berg through email.
 
 ## Data
 
